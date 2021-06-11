@@ -97,27 +97,64 @@
     <that>ARTIFICIAL INTELLIGENCE MARKUP LANGUAGE</that>
     <template>You can make chatbots with it</template>
 </category>
-
+#==============================================================================================================================================================
 <category>
     <pattern>WHERE IS *</pattern>
     <template>
         
-        <think><set name = "state"><star /></set></think>
         
+                        <!--Countries--> 
+        <think><set name = "state"><star /></set></think>
         <condition name = "state" value = "England"> England is in Europe. </condition>
         
         <condition name = "state" value = "China"> China is in Asia. </condition>
         
         <condition name = "state" value = "USA"> USA is in North-America. </condition>
-        <condition name = "state" value = "United States"> US is in North-America. </condition>
-        <condition name = "state" value = "US"> US is in North-America. </condition>
-        <condition name = "state" value = "America"> America is in North-America. </condition>
         <condition name = "state" value = "United States of America"> USA is in North-America. </condition>
+        <condition name = "state" value = "US"> US is in North-America. </condition>
+        <condition name = "state" value = "United States"> US is in North-America. </condition>
+        <condition name = "state" value = "America"> America is in North-America. </condition>
         
         <condition name = "state" value = "Canada"> Canada is in North-America. </condition>
         
+        
+        
+        
+                        <!--Capital Cities-->        
+        <think><set name = 'capital'><star /></set></think>
+        
+        <condition name = 'capital' value = "Ottawa">Ottawa is the capital of Canada in North-America</condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Ottawa">                               </condition>
+        
+        
+        
+        
+                        <!--Cities-->         
+        <think><set name = 'city'><star /></set></think>
+        <condition name = 'city' value = 'Toronto'>Toronto, a city in Canada. Also the most crowded city in Canada</condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        <condition name = 'city' value = 'Toronto'>                                 </condition>
+        
+        
+        
+
     </template>
 </category>
+
 #==============================================================================================================================================================
 
 <category>
@@ -162,6 +199,7 @@
             <li>one</li>
             <li>two</li>
             <li>three</li>
+            
         </random>
     </template>
 </category>
