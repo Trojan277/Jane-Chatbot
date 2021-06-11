@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-    
+<aiml version="2.0">
+
 <category>
     <pattern>*</pattern>
     <template>I don't understand.</template>
@@ -97,8 +97,64 @@
     <that>ARTIFICIAL INTELLIGENCE MARKUP LANGUAGE</that>
     <template>You can make chatbots with it</template>
 </category>
+
+<category>
+    <pattern>WHERE IS *</pattern>
+    <template>
+        
+        <think><set name = "state"><star /></set></think>
+        
+        <condition name = "state" value = "England"> England is in Europe. </condition>
+        
+        <condition name = "state" value = "China"> China is in Asia. </condition>
+        
+        <condition name = "state" value = "USA"> USA is in North-America. </condition>
+        <condition name = "state" value = "United States"> US is in North-America. </condition>
+        <condition name = "state" value = "US"> US is in North-America. </condition>
+        <condition name = "state" value = "America"> America is in North-America. </condition>
+        <condition name = "state" value = "United States of America"> USA is in North-America. </condition>
+        
+        <condition name = "state" value = "Canada"> Canada is in North-America. </condition>
+        
+    </template>
+</category>
 #==============================================================================================================================================================
-<!-- random number picker-->
+
+<category>
+    <pattern>LETS TALK ABOUT ELVES</pattern>
+    <template>
+        <think><set name = 'topic'>elves</set></think>
+        Yeah, let's discuss elves!
+    </template>
+</category>
+
+<category>
+    <pattern>LETS TALK ABOUT ANIMALS</pattern>
+    <template>
+        <think><set name = 'topic'>cats</set></think>
+        Yeah, let's discuss cats!
+    </template>
+</category>
+
+
+
+
+<topic name = 'elves'>
+    <category>
+        <pattern>WHAT DO THEY LOOK LIKE</pattern>
+        <template>Big pointy ears</template>
+    </category>
+</topic>
+
+<topic name = 'cats'>
+    <category>
+        <pattern>WHAT DO THEY LOOK LIKE</pattern>
+        <template>little furry things</template>
+    </category>
+</topic>
+
+#======================================<!-- random number picker-->========================================================================================================
+
 <category>
     <pattern>PICK A NUMBER</pattern>
     <template>
