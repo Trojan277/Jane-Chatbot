@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+<category>
+    <pattern>*</pattern>
+    <template>I don't understand.</template>
+</category>
+ 
+<category>
+    <pattern>HI</pattern>
+    <template>
+        <random>
+            <li>Hi There !</li>
+            <li>Hello! Welcome. Let's chat!</li>
+            <li>Hi</li>
+        </random>
+    </template>
+</category> 
+
+<category>
+    <pattern>* HI *</pattern>
+    <template>
+        <random>
+            <li>Hi There !</li>
+            <li>Hello! Welcome. Let's chat!</li>
+            <li>Hi</li>
+        </random>
+    </template>
+</category> 
+
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        <random>
+            <li>Hi There !</li>
+            <li>Hello! Welcome. Let's chat!</li>
+            <li>Hi</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>* HELLO *</pattern>
+    <template>
+        <random>
+            <li>Hi There !</li>
+            <li>Hello! Welcome. Let's chat!</li>
+            <li>Hi</li>
+        </random>
+    </template>
+</category>  
+#==============================================================================================================================================================
+<category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>my name is jane</template>
+</category>
+
+<category>
+    <pattern>TELL ME MORE</pattern>
+    <that>MY NAME IS JANE</that>
+    <template>There is not much else to say</template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+        <random>
+            <li>Hi <set name = 'username'><star/></set>! what's up?</li>
+            <li>hello</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>I remember your name, you just said it. Your name is <get name = 'username'/></template>
+</category>
+#==============================================================================================================================================================
+<category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>
+        <random>
+            <li>i am good</li>
+            <li>i am fine</li>
+            <li>nothing much</li>
+        </random>
+    </template>
+</category>
+#==============================================================================================================================================================
+<category>
+    <pattern>WHAT IS AIML</pattern>
+    <template>Artificial Intelligence Markup Language</template>
+</category>
+
+<category>
+    <pattern>TELL ME MORE</pattern>
+    <that>ARTIFICIAL INTELLIGENCE MARKUP LANGUAGE</that>
+    <template>You can make chatbots with it</template>
+</category>
+#==============================================================================================================================================================
+<!-- random number picker-->
+<category>
+    <pattern>PICK A NUMBER</pattern>
+    <template>
+        <random>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </random>
+    </template>
+</category>
+#==============================================================================================================================================================
+
+
+
+</aiml>
