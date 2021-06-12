@@ -9,6 +9,29 @@
 <category>
     <pattern>HI</pattern>
     <template>
+    <random>
+        <li> <image>https://media.tenor.com/images/acc4116372dcc4b342cb1a00ae657151/tenor.gif</image> </li>
+        <li> <image>https://i.pinimg.com/originals/a6/6e/1a/a66e1a58c5ba85a998d60b4d130929cb.gif</image> </li>
+        <li> <image>https://media1.giphy.com/media/888R35MJTmDxQfRzfS/200.gif</image> </li>
+    </random>
+    
+        <random>
+            <li>Hi There !</li>
+            <li>Hello! Welcome. Let's chat!</li>
+            <li>Hi!</li>
+        </random>
+    </template>
+</category> 
+
+<category>
+    <pattern>HI *</pattern>
+    <template>
+    <random>
+        <li> <image>https://media.tenor.com/images/acc4116372dcc4b342cb1a00ae657151/tenor.gif</image> </li>
+        <li> <image>https://i.pinimg.com/originals/a6/6e/1a/a66e1a58c5ba85a998d60b4d130929cb.gif</image> </li>
+        <li> <image>https://media1.giphy.com/media/888R35MJTmDxQfRzfS/200.gif</image> </li>
+    </random>
+    
         <random>
             <li>Hi There !</li>
             <li>Hello! Welcome. Let's chat!</li>
@@ -18,23 +41,17 @@
 </category> 
 
 <category>
-    <pattern>* HI *</pattern>
+    <pattern>HELLO *</pattern>
     <template>
+    <random>
+        <li> <image>https://media.tenor.com/images/acc4116372dcc4b342cb1a00ae657151/tenor.gif</image> </li>
+        <li> <image>https://i.pinimg.com/originals/a6/6e/1a/a66e1a58c5ba85a998d60b4d130929cb.gif</image> </li>
+        <li> <image>https://media1.giphy.com/media/888R35MJTmDxQfRzfS/200.gif</image> </li>
+    </random>
         <random>
             <li>Hi There !</li>
-            <li>Hello! Welcome. Let's chat!</li>
-            <li>Hi</li>
-        </random>
-    </template>
-</category> 
-
-<category>
-    <pattern>HELLO</pattern>
-    <template>
-        <random>
-            <li>Hi There !</li>
-            <li>Hello! Welcome. Let's chat!</li>
-            <li>Hi</li>
+            <li>Hello, Welcome :) Let's chat!</li>
+            <li>Hi!</li>
         </random>
     </template>
 </category>
@@ -58,15 +75,30 @@
 <category>
     <pattern>TELL ME MORE</pattern>
     <that>MY NAME IS JANE</that>
-    <template>There is not much else to say</template>
+    <template>I was created a short time ago by my creator</template>
 </category>
+
+
+
+<category>
+    <pattern>WHO IS YOUR CREATOR</pattern>
+    <template>my creator is trojan</template>
+</category>
+
+<category>
+    <pattern>TELL ME MORE</pattern>
+    <that>MY CREATOR IS TROJAN</that>
+    <template>I'm being develop by a programmer called "trojan"</template>
+</category>
+
+
 
 <category>
     <pattern>MY NAME IS *</pattern>
     <template>
         <random>
             <li>Hi <set name = 'username'><star/></set>! what's up?</li>
-            <li>hello</li>
+            <li>hello <set name = 'username'><star /></set></li>
         </random>
     </template>
 </category>
@@ -124,7 +156,7 @@
         <think><set name = 'capital'><star /></set></think>
         
         <condition name = 'capital' value = "Ottawa">Ottawa is the capital of Canada in North-America</condition>
-        <condition name = 'capital' value = "Ottawa">                               </condition>
+        <condition name = 'capital' value = "Washington, DC">Washington, DC is the capital of the USA in North-America</condition>
         <condition name = 'capital' value = "Ottawa">                               </condition>
         <condition name = 'capital' value = "Ottawa">                               </condition>
         <condition name = 'capital' value = "Ottawa">                               </condition>
@@ -156,6 +188,16 @@
 </category>
 
 #==============================================================================================================================================================
+<category>
+    <pattern>LETS TALK ABOUT MOVIES</pattern>
+    <template>
+        <think><set name = 'topic'>movies</set></think>
+        <random>
+            <li> Good idea! What is your favorite movie?</li>
+            <li>Yes, let's discuss movies!</li>
+        </random>
+    </template>
+</category>
 
 <category>
     <pattern>LETS TALK ABOUT ELVES</pattern>
@@ -173,8 +215,12 @@
     </template>
 </category>
 
-
-
+<topic name = 'movies'>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
+        <template>I like movies about artificial intelligence</template>
+    </category>
+</topic>
 
 <topic name = 'elves'>
     <category>
@@ -204,7 +250,6 @@
     </template>
 </category>
 #==============================================================================================================================================================
-
 
 
 </aiml>
